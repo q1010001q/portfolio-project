@@ -1,0 +1,71 @@
+header {
+	width: 100vw;
+	height: 104px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.header__itemsContainer {
+		width: 89%;
+		height: 52%;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 30px;
+
+		.header__logoContainer {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+
+			.header__logoImage {
+				width: 40px;
+				height: 40px;
+			}
+			.header__logoText {
+				font-weight: 700;
+			}
+		}
+
+		.header__nav {
+			max-width: 437px;
+
+			flex-grow: 1;
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+
+				font-weight: 600;
+			}
+		}
+
+		.header__resumeButton {
+			height: 56px;
+			padding: 16px 20px;
+
+			display: flex;
+			align-items: center;
+
+			gap: 8px;
+
+			border: 0;
+			border-radius: 4px;
+			background-color: var(--color-black);
+
+			.resumeButton__text {
+				font-weight: 600;
+				color: var(--color-white);
+			}
+
+			.resumeButton__image {
+				width: 20px;
+				height: 20px;
+
+				flex-shrink: 0;
+			}
+		}
+	}
+}
