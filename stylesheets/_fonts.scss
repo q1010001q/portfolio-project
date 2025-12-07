@@ -48,12 +48,23 @@
 	letter-spacing: -0.02rem;
 }
 
+.display-text-ExtraBold {
+	font-family: 'Sora-ExtraBold', sans-serif;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	letter-spacing: -0.02rem;
+}
+
 .outlined-text {
 	font-family: 'Sora-ExtraBold', serif;
 	font-size: 3rem;
 	line-height: 3.5rem;
-	letter-spacing: -0.02rem;
+	letter-spacing: -0.02%;
 
 	color: white;
-	-webkit-text-stroke: 3px black;
+	text-shadow:
+		3px 3px 0 black,
+		-3px -3px 0 black,
+		3px -3px 0 black,
+		-3px 3px 0 black;
 }

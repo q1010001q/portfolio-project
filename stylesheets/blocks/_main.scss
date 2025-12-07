@@ -4,8 +4,6 @@
 	padding: 104px 0 0 0;
 
 	.main__generalInformationContainer {
-		height: 716px;
-
 		padding: 60px 80px;
 
 		.generalInformationContainer__content {
@@ -14,20 +12,131 @@
 			display: flex;
 			align-items: center;
 
-			background-image: url('../../assets/images/boy.svg');
-			background-repeat: no-repeat;
-			background-position-x: right;
-			background-position-y: bottom;
-
 			.generalInformationContainer__contentText {
 				width: 41.66%;
+				font-size: 16px;
 
-				.contentText__headerText{
+				flex: 1;
 
+				margin-left: 32px;
+
+				.contentText__headerText {
+					margin-bottom: 32px;
+
+					.headerText__text {
+						margin-bottom: 20px;
+					}
 				}
 
-				.contentText__mainText{
+				.contentText__mainText {
+					line-height: 26px;
 					color: var(--color-500);
+				}
+			}
+
+			.content__boyBanner {
+				flex: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.main {
+		padding: 70px 0 0 0;
+
+		.main__generalInformationContainer {
+			padding: 40px 16px;
+
+			.generalInformationContainer__contentText {
+				.contentText__headerText {
+					.headerText__text {
+						margin-bottom: 10px;
+
+						font-size: 24px;
+						line-height: 1.75rem;
+						.display-text-ExtraBold {
+							font-size: 2rem;
+							line-height: 2rem;
+						}
+						.outlined-text {
+							font-size: 2rem;
+							line-height: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.main {
+		.main__generalInformationContainer {
+			.generalInformationContainer__content {
+				.generalInformationContainer__contentText {
+					.contentText__headerText {
+						margin-bottom: 10px;
+
+						.headerText__text {
+							margin-bottom: 16px;
+
+							font-size: 18px;
+							line-height: 1.5rem;
+							.display-text-ExtraBold {
+								font-size: 1.5rem;
+								line-height: 1.5rem;
+							}
+							.outlined-text {
+								font-size: 1.5rem;
+								line-height: 1.5rem;
+							}
+						}
+					}
+					.paragraph-p2 {
+						line-height: 1.25rem;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.main {
+		.main__generalInformationContainer {
+			.generalInformationContainer__content {
+				flex-direction: column-reverse;
+				align-items: center;
+				.generalInformationContainer__contentText {
+					width: 100%;
+
+					margin: 0;
+
+					.contentText__headerText {
+						.headerText__text {
+							margin-bottom: 20px;
+
+							font-size: 48px;
+							line-height: 3rem;
+							.display-text-ExtraBold {
+								font-size: 3rem;
+								line-height: 2.5rem;
+							}
+							.outlined-text {
+								font-size: 3rem;
+								line-height: 2.5rem;
+							}
+						}
+					}
+					.contentText__mainText {
+						font-size: 20px;
+						line-height: 2rem;
+					}
+				}
+				.content__boyBanner {
+					margin-bottom: 48px;
 				}
 			}
 		}

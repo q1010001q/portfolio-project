@@ -27,7 +27,6 @@
 
 			.header__logoImage {
 				width: 40px;
-				height: 40px;
 			}
 			.header__logoText {
 				font-weight: 700;
@@ -90,7 +89,6 @@
 
 			.resumeButton__image {
 				width: 20px;
-				height: 20px;
 				stroke: white;
 				fill: none;
 
@@ -100,7 +98,7 @@
 
 		.header__burgerMenuIcon {
 			width: 36px;
-			height: 36px;
+
 			display: none;
 			cursor: pointer;
 		}
@@ -133,6 +131,35 @@
 		opacity: 1;
 		visibility: visible;
 		transform: translateX(0);
+	}
+}
+
+@media (max-width: 1400px) {
+	.header {
+		height: 70px;
+		padding: 0 20px;
+
+		.header__itemsContainer {
+			.header__nav {
+				.heading-h5 {
+					font-size: 1rem;
+				}
+			}
+			.header__resumeButton {
+				height: 40px;
+				.button-text2 {
+					font-size: 0.75rem;
+				}
+				.resumeButton__image {
+					width: 16px;
+				}
+			}
+		}
+
+		.header__burgerMenu {
+			height: calc(100vh - 70px);
+			top: 70px;
+		}
 	}
 }
 
