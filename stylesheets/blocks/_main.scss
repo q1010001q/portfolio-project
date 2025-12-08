@@ -1,10 +1,10 @@
 .main {
 	width: 100%;
 
-	padding: 104px 80px;
+	padding: 104px 0;
 
 	.main__generalInformationContainer {
-		padding: 60px 32px;
+		padding: 60px 112px;
 
 		.generalInformationContainer__content {
 			display: flex;
@@ -41,7 +41,12 @@
 	}
 
 	.main__skillsContainer {
-		padding: 60px 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 60px 112px;
 		.skillsContainerTitle {
 			display: flex;
 			justify-content: center;
@@ -51,6 +56,8 @@
 			margin-bottom: 20px;
 		}
 		.skillsContainer__skills {
+			max-width: 1216px;
+			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
@@ -73,8 +80,44 @@
 				border: 2px solid;
 				border-radius: 4px;
 
+				transition: 0.3s ease;
+
 				svg {
 					width: 56px;
+				}
+
+				&:hover,
+				&:focus {
+					filter: invert(1);
+				}
+			}
+		}
+	}
+
+	.main__experienceContainer {
+		width: 100%;
+		padding: 60px 112px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		color: white;
+		background-color: var(--color-black);
+
+		.experienceContainerTitle {
+		}
+		.experienceContainer__experience {
+			.experience__item {
+				.experienceItem__header {
+					.experienceItemHeader__logoTitle {
+					}
+					.experienceItemHeader__workTime {
+					}
+				}
+				.experienceItem__mainInformation {
+					.mainInformation__text {
+					}
 				}
 			}
 		}
@@ -83,10 +126,10 @@
 
 @media (max-width: 1400px) {
 	.main {
-		padding: 70px 16px;
+		padding: 70px 0;
 
 		.main__generalInformationContainer {
-			padding: 40px 0;
+			padding: 40px 16px;
 
 			.generalInformationContainer__contentText {
 				.contentText__headerText {
@@ -108,7 +151,7 @@
 			}
 		}
 		.main__skillsContainer {
-			padding: 0;
+			padding: 60px 16px;
 		}
 	}
 }
@@ -145,7 +188,8 @@
 		}
 
 		.main__skillsContainer {
-			.display-text,.display-text-ExtraBold {
+			.display-text,
+			.display-text-ExtraBold {
 				font-size: 1.5rem;
 				line-height: 1.75rem;
 			}
