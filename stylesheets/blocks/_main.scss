@@ -142,3 +142,39 @@
 		}
 	}
 }
+
+@media (max-width: 450px) {
+	.main {
+		.main__generalInformationContainer {
+			.generalInformationContainer__content {
+				.generalInformationContainer__contentText {
+					.contentText__headerText {
+						margin-bottom: 32px;
+
+						.headerText__text {
+							margin-bottom: 12px;
+
+							font-size: 24px;
+							line-height: 1.75rem;
+							.display-text-ExtraBold {
+								font-size: 1.5rem;
+								line-height: 1.75rem;
+							}
+							.outlined-text {
+								font-size: 1.5rem;
+								line-height: 1.75rem;
+							}
+						}
+					}
+					.contentText__mainText {
+						font-size: 1rem;
+						line-height: 1.25rem;
+					}
+				}
+				.content__boyBanner {
+					margin-bottom: 48px;
+				}
+			}
+		}
+	}
+}
