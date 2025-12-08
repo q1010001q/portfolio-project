@@ -1,24 +1,21 @@
 .main {
-	width: 100vw;
+	width: 100%;
 
-	padding: 104px 0 0 0;
+	padding: 104px 80px;
 
 	.main__generalInformationContainer {
-		padding: 60px 80px;
+		padding: 60px 32px;
 
 		.generalInformationContainer__content {
-			height: 100%;
-
 			display: flex;
 			align-items: center;
 
 			.generalInformationContainer__contentText {
 				width: 41.66%;
+
 				font-size: 16px;
 
 				flex: 1;
-
-				margin-left: 32px;
 
 				.contentText__headerText {
 					margin-bottom: 32px;
@@ -35,7 +32,50 @@
 			}
 
 			.content__boyBanner {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				flex: 1;
+			}
+		}
+	}
+
+	.main__skillsContainer {
+		padding: 60px 32px;
+		.skillsContainerTitle {
+			display: flex;
+			justify-content: center;
+
+			padding: 20px 0;
+
+			margin-bottom: 20px;
+		}
+		.skillsContainer__skills {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 20px;
+
+			padding: 40px 0;
+
+			.skills__item {
+				width: 186px;
+				aspect-ratio: 1/1;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 32px;
+
+				background-color: var(--color-white);
+
+				border: 2px solid;
+				border-radius: 4px;
+
+				svg {
+					width: 56px;
+				}
 			}
 		}
 	}
@@ -43,10 +83,10 @@
 
 @media (max-width: 1400px) {
 	.main {
-		padding: 70px 0 0 0;
+		padding: 70px 16px;
 
 		.main__generalInformationContainer {
-			padding: 40px 16px;
+			padding: 40px 0;
 
 			.generalInformationContainer__contentText {
 				.contentText__headerText {
@@ -66,6 +106,9 @@
 					}
 				}
 			}
+		}
+		.main__skillsContainer {
+			padding: 0;
 		}
 	}
 }
@@ -100,6 +143,19 @@
 				}
 			}
 		}
+
+		.main__skillsContainer {
+			.display-text,.display-text-ExtraBold {
+				font-size: 1.5rem;
+				line-height: 1.75rem;
+			}
+			.skillsContainer__skills {
+				padding: 0;
+				.skills__item {
+					width: 160px;
+				}
+			}
+		}
 	}
 }
 
@@ -109,10 +165,10 @@
 			.generalInformationContainer__content {
 				flex-direction: column-reverse;
 				align-items: center;
+
+				margin: 0;
 				.generalInformationContainer__contentText {
 					width: 100%;
-
-					margin: 0;
 
 					.contentText__headerText {
 						.headerText__text {
@@ -138,6 +194,11 @@
 				.content__boyBanner {
 					margin-bottom: 48px;
 				}
+			}
+		}
+		.main__skillsContainer {
+			.skillsContainer__skills {
+				justify-content: center;
 			}
 		}
 	}
@@ -173,6 +234,13 @@
 				}
 				.content__boyBanner {
 					margin-bottom: 48px;
+				}
+			}
+		}
+		.main__skillsContainer {
+			.skillsContainer__skills {
+				.skills__item {
+					width: 160px;
 				}
 			}
 		}
