@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.header__navLink')
+const navLinks = document.querySelectorAll('.headerBurgerMenu__navLink')
 const burgerMenu = document.querySelector('.header__burgerMenu')
 
 navLinks.forEach((link) => {
